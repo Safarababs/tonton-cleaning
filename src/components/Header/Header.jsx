@@ -8,7 +8,7 @@ const Header = () => {
         <div className="header-top row align-items-center">
           <div className="col-lg-3 topbar">
             <div className="brand">
-              <a href="index.html">
+              <a href="/home">
                 <img src={logo} alt="Logo" />
               </a>
             </div>
@@ -39,7 +39,7 @@ const Header = () => {
               </div>
             </div>
             <div className="navbar navbar-expand-lg bg-light navbar-light">
-              <a href="#" className="navbar-brand">
+              <a href="/home" className="navbar-brand">
                 MENU
               </a>
               <button
@@ -56,21 +56,21 @@ const Header = () => {
                 id="navbarCollapse"
               >
                 <div className="navbar-nav ml-auto">
-                  <a href="index.html" className="nav-item nav-link active">
+                  <a href="/home" className="nav-item nav-link active">
                     Zuhause
                   </a>
-                  <a href="about.html" className="nav-item nav-link">
+                  <a href="/" className="nav-item nav-link">
                     Über uns
                   </a>
-                  <a href="service.html" className="nav-item nav-link">
+                  <a href="/" className="nav-item nav-link">
                     Dienstleistungen
                   </a>
 
-                  <a href="contact.html" className="nav-item nav-link">
+                  <a href="/" className="nav-item nav-link">
                     Kontaktiere uns
                   </a>
 
-                  <a href="#" className="btn">
+                  <a href="/" className="btn">
                     Ein Angebot erhalten
                   </a>
                 </div>
@@ -87,7 +87,7 @@ const Header = () => {
             </h2>
 
             <p>Vertrauen und Qualitätssteigerung – unser Versprechen an Sie.</p>
-            <a className="btn" href="">
+            <a className="btn" href="/">
               {" "}
               Jetzt erkunden
             </a>

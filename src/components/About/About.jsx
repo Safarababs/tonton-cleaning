@@ -8,7 +8,7 @@ const About = () => {
         <div className="row">
           <div className="col-lg-5 col-md-6">
             <div className="about-img">
-              <img src={about} alt="Image" />
+              <img src={about} alt="not available" />
             </div>
           </div>
           <div className="col-lg-7 col-md-6">
@@ -31,7 +31,7 @@ const About = () => {
                 wohl fühlen können.
               </p>
 
-              <a className="btn" href="">
+              <a className="btn" href="/home">
                 Erfahren Sie mehr
               </a>
             </div>

@@ -22,7 +22,7 @@ const Feature = () => {
               haben wir das Fachwissen, um jedes Mal außergewöhnliche Ergebnisse
               zu liefern.
             </p>
-            <a className="btn" href="">
+            <a className="btn" href="/">
               Erfahren Sie mehr
             </a>
           </div>

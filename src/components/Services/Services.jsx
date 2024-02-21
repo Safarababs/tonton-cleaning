@@ -27,7 +27,7 @@ const Services = () => {
                 Desinfektion und Instandhaltung, um Ihren Raum sauber, sicher
                 und komfortabel zu halten.
               </p>
-              <a className="btn" href="">
+              <a className="btn" href="/">
                 Mehr erfahren
               </a>
             </div>
@@ -41,7 +41,7 @@ const Services = () => {
                 sorgen dafür, dass jeder Schritt makellos und sicher für Ihre
                 Nutzung ist.
               </p>
-              <a className="btn" href="">
+              <a className="btn" href="/">
                 Mehr erfahren
               </a>
             </div>
@@ -55,7 +55,7 @@ const Services = () => {
                 Fenster, Spiegel und Glasflächen kristallklar und streifenfrei
                 aussehen.
               </p>
-              <a className="btn" href="">
+              <a className="btn" href="/">
                 Mehr erfahren
               </a>
             </div>
@@ -69,7 +69,7 @@ const Services = () => {
                 Ihrem Raum einen frischen Anstrich in Farbe und Stil, verwandeln
                 ihn in eine schöne Umgebung.
               </p>
-              <a className="btn" href="">
+              <a className="btn" href="/">
                 Mehr erfahren
               </a>
             </div>
@@ -84,7 +84,7 @@ const Services = () => {
                 Landschaftsbau-Dienstleistungen, einschließlich Design,
                 Bepflanzung und Pflege.
               </p>
-              <a className="btn" href="">
+              <a className="btn" href="/">
                 Mehr erfahren
               </a>
             </div>
@@ -99,7 +99,7 @@ const Services = () => {
                 von Renovierungen bis hin zu Neubauten, und garantieren
                 hochwertige Handwerkskunst und Liebe zum Detail.
               </p>
-              <a className="btn" href="">
+              <a className="btn" href="/">
                 Mehr erfahren
               </a>
             </div>
@@ -114,7 +114,7 @@ const Services = () => {
                 stellen Sie sicher, dass Ihre Möbel effizient und korrekt
                 aufgebaut oder abgebaut werden.
               </p>
-              <a className="btn" href="">
+              <a className="btn" href="/">
                 Mehr erfahren
               </a>
             </div>
@@ -129,7 +129,7 @@ const Services = () => {
                 Bodenbelagsoptionen, die fachmännisch verlegt werden, um die
                 Schönheit und Funktionalität Ihres Raumes zu verbessern.
               </p>
-              <a className="btn" href="">
+              <a className="btn" href="/">
                 Mehr erfahren
               </a>
             </div>
@@ -143,7 +143,7 @@ const Services = () => {
                 Wir sind spezialisiert auf Trockenbau und bieten fachgerechte
                 Montage und Fertigstellung für glatte und nahtlose Wände.
               </p>
-              <a className="btn" href="">
+              <a className="btn" href="/">
                 Mehr erfahren
               </a>
             </div>

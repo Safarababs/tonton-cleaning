@@ -11,7 +11,7 @@ const Faq = () => {
               <p>Sie könnten fragen</p>
               <h2>Häufig gestellte Fragen</h2>
             </div>
-            <img src={faq} alt="Image" />
+            <img src={faq} alt="not avaiable" />
           </div>
           <div className="col-md-7">
             <div id="accordion">
