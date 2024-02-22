@@ -13,7 +13,7 @@ const AddressPopup = () => {
 
   return (
     <div>
-      <button type="button" className="btn btn-primary" onClick={toggleModal}>
+      <button type="button" className="footer-button" onClick={toggleModal}>
         Impressum
       </button>
 
@@ -44,7 +44,6 @@ const AddressPopup = () => {
                 </div>
               </div>
               <button
-                type="button"
                 style={{
                   background: "#2ea7ff",
                   color: "black",
@@ -52,7 +51,8 @@ const AddressPopup = () => {
                   margin: "auto",
                   marginBottom: ".5rem",
                 }}
-                className="btn btn-primary btn-lg"
+                type="button"
+                className=" btn-primary btn-lg"
                 onClick={closeModal}
               >
                 Close

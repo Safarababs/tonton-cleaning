@@ -1189,6 +1189,14 @@ a:focus {
   font-weight: bold;
 }
 
+.footer-button {
+  width: auto;
+  background: #00539c;
+  border: none;
+  cursor: pointer;
+  color: #ffd662;
+}
+
 @media (max-width: 768px) {
   .footer .copyright p,
   .footer .copyright .col-md-6:last-child p {
