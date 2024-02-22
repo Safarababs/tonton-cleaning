@@ -2,8 +2,10 @@ import React from "react";
 import about from "../img/about.jpg";
 
 const About = () => {
+  const year = new Date().getFullYear();
+  const total = year - 2017;
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-6">
@@ -14,7 +16,7 @@ const About = () => {
           <div className="col-lg-7 col-md-6">
             <div className="about-text">
               <h2>
-                <span>7</span> Jahre Erfahrung
+                <span>{total}</span> Jahre Erfahrung
               </h2>
               <p>
                 Seit unserer Gründung haben wir uns darauf spezialisiert,
@@ -31,7 +33,7 @@ const About = () => {
                 wohl fühlen können.
               </p>
 
-              <a className="btn" href="/home">
+              <a className="btn" href="#service">
                 Erfahren Sie mehr
               </a>
             </div>

@@ -7,7 +7,7 @@ const Testimonial = () => {
       <div className="container">
         <div className="section-header">
           <p>Kundenbewertung</p>
-          <h2>Kunde sagt über den Service</h2>
+          <h2>Unsere Kunden</h2>
         </div>
         <div className="owl-carousel testimonials-carousel">
           <div className="testimonial-item">

@@ -2,6 +2,8 @@ import React from "react";
 import faq from "../img/faqs.jpg";
 
 const Faq = () => {
+  const year = new Date().getFullYear();
+  const total = year - 2017;
   return (
     <div className="faqs">
       <div className="container">
@@ -105,9 +107,10 @@ const Faq = () => {
                   data-parent="#accordion"
                 >
                   <div className="card-body">
-                    Mit über 10 Jahren Erfahrung verbinden wir Fachkenntnisse
-                    mit einem Qualitätsanspruch und gewährleisten so, dass jedes
-                    Projekt nach höchsten Standards abgeschlossen wird.
+                    Mit über{total} Jahren Erfahrung verbinden wir
+                    Fachkenntnisse mit einem Qualitätsanspruch und gewährleisten
+                    so, dass jedes Projekt nach höchsten Standards abgeschlossen
+                    wird.
                   </div>
                 </div>
               </div>
@@ -137,7 +140,10 @@ const Faq = () => {
                 </div>
               </div>
             </div>
-            <a className="btn" href="Ask more">
+            <a
+              className="btn"
+              href="mailto:floriannauendorff.service@gmail.com"
+            >
               Fragen Sie mehr
             </a>
           </div>

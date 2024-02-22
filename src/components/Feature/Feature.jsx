@@ -4,6 +4,8 @@ import feature2 from "../img/feature-2.jpg";
 import feature3 from "../img/feature-3.jpg";
 
 const Feature = () => {
+  const year = new Date().getFullYear();
+  const total = year - 2015;
   return (
     <div className="feature">
       <div className="container">
@@ -18,11 +20,11 @@ const Feature = () => {
               Ihre Bedürfnisse zu erfüllen, einschließlich Grundpflege,
               Treppenhaus- und Glasreinigung, Malerarbeiten, Garten- und
               Landschaftsbau, Bauleistungen, Trockenbau, Möbelmontage und
-              -demontage sowie Bodenverlegung. Mit über 10 Jahren Erfahrung
+              -demontage sowie Bodenverlegung. Mit über {total} Jahren Erfahrung
               haben wir das Fachwissen, um jedes Mal außergewöhnliche Ergebnisse
               zu liefern.
             </p>
-            <a className="btn" href="/">
+            <a className="btn" href="#contact">
               Erfahren Sie mehr
             </a>
           </div>

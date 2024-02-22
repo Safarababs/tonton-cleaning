@@ -56,21 +56,21 @@ const Header = () => {
                 id="navbarCollapse"
               >
                 <div className="navbar-nav ml-auto">
-                  <a href="/home" className="nav-item nav-link active">
-                    Zuhause
+                  <a href="#home" className="nav-item nav-link active">
+                    Heim
                   </a>
-                  <a href="/" className="nav-item nav-link">
+                  <a href="#about" className="nav-item nav-link">
                     Über uns
                   </a>
-                  <a href="/" className="nav-item nav-link">
+                  <a href="#service" className="nav-item nav-link">
                     Dienstleistungen
                   </a>
 
-                  <a href="/" className="nav-item nav-link">
+                  <a href="#contact" className="nav-item nav-link">
                     Kontaktiere uns
                   </a>
 
-                  <a href="/" className="btn">
+                  <a href="#contact" className="btn">
                     Ein Angebot erhalten
                   </a>
                 </div>
@@ -83,11 +83,11 @@ const Header = () => {
           <div className="col-md-7">
             <h2>Der beste und</h2>
             <h2>
-              <span>vertrauenswürdigste Service</span> in Ihrer Umgebung
+              <span>höchst getraut Service</span> in Ihrer Fläche
             </h2>
 
             <p>Vertrauen und Qualitätssteigerung – unser Versprechen an Sie.</p>
-            <a className="btn" href="/">
+            <a className="btn" href="#service">
               {" "}
               Jetzt erkunden
             </a>

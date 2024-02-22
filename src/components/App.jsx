@@ -7,6 +7,7 @@ import Faq from "./Faq/Faq";
 
 import Testimonial from "./Testimonial/Testimonial";
 import Footer from "./Footer/footer";
+import Contact from "./contact/Contact";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Faq />
 
       <Testimonial />
+      <Contact />
       <Footer />
       <a href="/home" class="back-to-top">
         <i class="fa fa-chevron-up"></i>
