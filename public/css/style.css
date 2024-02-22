@@ -121,9 +121,19 @@ a:focus {
 
 .header .brand img {
   width: 100%;
-  /* max-width: 150px; */
+
   height: 100%;
-  /* max-height: 100px; */
+
+  animation: slideFromRight 1s forwards;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 .header .topbar {
@@ -135,6 +145,25 @@ a:focus {
   display: inline-block;
   padding: 0 15px;
   margin-bottom: 15px;
+  position: relative;
+  animation: slideFromLeft 1s forwards;
+}
+
+@keyframes slideFromLeft {
+  from {
+    left: -100%; /* Start off-screen to the left */
+  }
+  to {
+    left: 0; /* Move to the desired position */
+  }
+}
+
+.header .topbar .topbar-col:nth-child(1) {
+  animation-delay: 1s; /* Delay for the first div */
+}
+
+.header .topbar .topbar-col:nth-child(2) {
+  animation-delay: 2s; /* Delay for the second div */
 }
 
 .header .topbar-col a {
@@ -169,24 +198,9 @@ a:focus {
   color: #ffd662;
 }
 
-.header .dropdown-menu {
-  margin-top: 0;
-  border: 0;
-  border-radius: 5px;
-  background: #eeeeee;
-}
-
-.header .dropdown-menu a.active {
-  color: #ffd662;
-}
-
 @media (min-width: 992px) {
   .header .navbar {
     background: transparent !important;
-  }
-
-  .header .navbar-brand {
-    display: none;
   }
 
   .header .navbar-light a.nav-link,
@@ -208,6 +222,8 @@ a:focus {
   .header .brand {
     text-align: center;
     margin-bottom: 15px;
+    width: auto;
+    height: auto;
   }
 
   .header .topbar {
@@ -240,7 +256,7 @@ a:focus {
 
 .header .navbar .btn {
   position: relative;
-  margin-left: 15px;
+  margin-left: -100%; /* Start off-screen to the left */
   padding: 12px 20px 10px 20px;
   font-size: 13px;
   text-transform: uppercase;
@@ -249,11 +265,21 @@ a:focus {
   border-radius: 5px;
   background: #00539c;
   transition: 0.3s;
+  animation: slideFromLeft 1s forwards;
 }
 
 .header .navbar .btn:hover {
   color: #000000;
   background: #ffd662;
+}
+
+@keyframes slideFromLeft {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 15px; /* Move to the desired position */
+  }
 }
 
 .header .navbar .btn i {
@@ -281,16 +307,85 @@ a:focus {
   font-size: 60px;
   font-weight: bolder;
   color: #ffffff;
+  animation: slideInLeft 1s forwards, moveRightLeft 3s infinite alternate 1s;
 }
 
 .header .hero h2 span {
   color: #00539c;
+  animation: slideInRight 1s forwards;
+  animation-delay: 0.5s; /* Delay the animation of span by 0.5s */
 }
 
 .header .hero p {
   margin: 10px 0 20px 0;
   font-size: 22px;
   color: #ffffff;
+  animation: slideInUp 1s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveRightLeft {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .header .hero {
+    padding-top: 45px;
+  }
+
+  .header .hero h2 {
+    font-size: 50px;
+  }
+
+  .header .hero p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .hero {
+    padding-top: 45px;
+  }
+
+  .header .hero h2 {
+    font-size: 45px;
+  }
+
+  .header .hero p {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -329,6 +424,20 @@ a:focus {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
+  animation: slideInLeft 3s;
+}
+
+.header .hero .form:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
 }
 
 .header .hero .form h3 {
@@ -440,6 +549,26 @@ a:focus {
   margin: 0 auto;
   margin-bottom: 60px;
   padding-bottom: 15px;
+  animation: slideInLeft 1s forwards, moveRightLeft 3s infinite alternate 1s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRightLeft {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
 }
 
 .section-header::before {
