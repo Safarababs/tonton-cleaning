@@ -18,8 +18,7 @@ const Footer = () => {
         <AddressPopup />
         <div className="box">
           <p>
-            Designed By{" "}
-            <a href="https://safarababs.github.io/safarweb/">Safar Abbas</a>
+            Designed By <a href="https://etenterprise.org/">ET Media</a>
           </p>
         </div>
       </div>
