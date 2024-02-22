@@ -15,7 +15,7 @@ const Services = () => {
       <div className="container">
         <div className="section-header">
           <p>Unsere Dienstleistungen</p>
-          <h2>Weltweite Dienste anbieten.</h2>
+          <h2>Unsere Dienste</h2>
         </div>
         <div className="row">
           <div className="col-lg-3 col-md-6">

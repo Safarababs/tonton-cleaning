@@ -5,7 +5,7 @@ import feature3 from "../img/feature-3.jpg";
 
 const Feature = () => {
   const year = new Date().getFullYear();
-  const total = year - 2015;
+  const total = year - 2017;
   return (
     <div className="feature">
       <div className="container">
@@ -13,7 +13,7 @@ const Feature = () => {
           <div className="col-md-5">
             <div className="section-header left">
               <p>Warum uns wählen?</p>
-              <h2>Unsere Dienste</h2>
+              <h2>Unsere umfassenden Dienstleistungen</h2>
             </div>
             <p>
               Wir bieten eine breite Palette von Dienstleistungen an, um alle

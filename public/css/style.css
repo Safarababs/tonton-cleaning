@@ -293,6 +293,20 @@ a:focus {
   color: #ffffff;
 }
 
+@media (max-width: 500px) {
+  .header .hero {
+    padding-top: 45px;
+  }
+
+  .header .hero h2 {
+    font-size: 32px;
+  }
+
+  .header .hero p {
+    font-size: 15px;
+  }
+}
+
 .header .hero a.btn {
   position: relative;
   padding: 15px 30px;
@@ -604,6 +618,10 @@ a:focus {
   margin-bottom: 30px;
 }
 
+.feature .section-header h2 {
+  font-size: 40px;
+}
+
 .feature a.btn {
   margin-top: 10px;
   padding: 15px 35px;
@@ -624,13 +642,10 @@ a:focus {
 
 .feature .feature-item {
   margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 @media (max-width: 767.98px) {
   .feature .feature-item {
-    flex-flow: column;
   }
 }
 
@@ -746,7 +761,7 @@ a:focus {
 }
 
 .faqs .card-body {
-  padding: 15px 0 0 0;
+  padding: 15px;
   font-size: 16px;
   border: none;
   background: #ffffff;

@@ -83,7 +83,7 @@ const Header = () => {
           <div className="col-md-7">
             <h2>Der beste und</h2>
             <h2>
-              <span>höchst getraut Service</span> in Ihrer Fläche
+              <span>vertrauenswürdigste Service</span> in Ihrer Fläche
             </h2>
 
             <p>Vertrauen und Qualitätssteigerung – unser Versprechen an Sie.</p>
