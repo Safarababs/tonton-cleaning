@@ -21,8 +21,8 @@ const App = () => {
       <Testimonial />
       <Contact />
       <Footer />
-      <a href="/home" class="back-to-top">
-        <i class="fa fa-chevron-up"></i>
+      <a href="/home" className="back-to-top">
+        <i className="fa fa-chevron-up"></i>
       </a>
     </>
   );

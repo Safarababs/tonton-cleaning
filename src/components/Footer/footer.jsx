@@ -1,4 +1,5 @@
 import React from "react";
+import AddressPopup from "./FooterAddress";
 
 const Footer = () => {
   return (
@@ -14,6 +15,7 @@ const Footer = () => {
             , All Right Reserved.
           </p>
         </div>
+        <AddressPopup />
         <div className="box">
           <p>
             Designed By{" "}

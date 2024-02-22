@@ -1,7 +1,29 @@
 import React from "react";
 import logo from "../images/logo1.png";
+import emailjs from "emailjs-com";
 
 const Header = () => {
+  function handleClick(event) {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_2o5rq45",
+        "template_q2xb5y5",
+        event.target,
+        "V8T-BnQcnCg_dNTxt"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    event.target.reset();
+  }
+
   return (
     <div className="header home">
       <div className="container-fluid">
@@ -95,20 +117,24 @@ const Header = () => {
           <div className="col-md-5">
             <div className="form">
               <h3>Ein Angebot erhalten</h3>
-              <form>
+              <form onSubmit={handleClick}>
                 <input
                   className="form-control"
                   type="text"
+                  name="name"
                   placeholder="Name"
                 />
                 <input
                   className="form-control"
                   type="text"
+                  name="phone"
                   placeholder="Handynummer"
                 />
                 <div className="control-group">
-                  <select className="custom-select">
-                    <option selected>Eine Dienstleistung wählen</option>
+                  <select defaultValue="" name="service">
+                    <option value="" disabled hidden>
+                      Eine Dienstleistung wählen
+                    </option>
                     <option value="1">Grundpflege</option>
                     <option value="2">Treppenhausreinigung</option>
                     <option value="3">Glasreinigung</option>
@@ -123,6 +149,7 @@ const Header = () => {
                 <textarea
                   className="form-control"
                   placeholder="Nachricht"
+                  name="message"
                 ></textarea>
                 <button className="btn btn-block">Ein Angebot erhalten</button>
               </form>
