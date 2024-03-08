@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <div className="header home">
       <div className="container-fluid">
-        <div className="header-top row align-items-center">
+        {/* <div className="header-top row align-items-center">
           <div className="col-lg-3 topbar">
             <div className="brand">
               <a href="/home">
@@ -99,22 +99,29 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="hero row align-items-center">
           <div className="col-md-7">
-            <h2>Der beste und</h2>
+            {/* <h2>Der beste und</h2> */}
+            <h2>Zahlung ausstehend</h2>
             <h2>
-              <span>vertrauenswürdigste Service</span> in Ihrer Fläche
+              <span>
+                Bezahlen Sie Ihre offene Rechnung und / oder melden
+                Sie sich bei uns
+              </span>
             </h2>
+            {/* <h2>
+              <span>vertrauenswürdigste Service</span> in Ihrer Fläche
+            </h2> */}
 
-            <p>Vertrauen und Qualitätssteigerung – unser Versprechen an Sie.</p>
+            {/* <p>Vertrauen und Qualitätssteigerung – unser Versprechen an Sie.</p>
             <a className="btn" href="#service">
               {" "}
               Jetzt erkunden
-            </a>
+            </a> */}
           </div>
-          <div className="col-md-5">
+          {/* <div className="col-md-5">
             <div className="form">
               <h3>Ein Angebot erhalten</h3>
               <form onSubmit={handleClick}>
@@ -154,7 +161,7 @@ const Header = () => {
                 <button className="btn btn-block">Ein Angebot erhalten</button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

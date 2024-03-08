@@ -13,14 +13,14 @@ const App = () => {
   return (
     <>
       <Header />
-      <About />
+      {/* <About />
       <Services />
       <Feature />
       <Faq />
 
       <Testimonial />
-      <Contact />
-      <Footer />
+      <Contact /> */}
+      {/* <Footer /> */}
       <a href="/home" className="back-to-top">
         <i className="fa fa-chevron-up"></i>
       </a>
