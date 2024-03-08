@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <div className="header home">
       <div className="container-fluid">
-        {/* <div className="header-top row align-items-center">
+        <div className="header-top row align-items-center">
           <div className="col-lg-3 topbar">
             <div className="brand">
               <a href="/home">
@@ -99,7 +99,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className="hero row align-items-center">
           <div className="col-md-7">
@@ -121,7 +121,7 @@ const Header = () => {
               Jetzt erkunden
             </a> */}
           </div>
-          {/* <div className="col-md-5">
+          <div className="col-md-5">
             <div className="form">
               <h3>Ein Angebot erhalten</h3>
               <form onSubmit={handleClick}>
@@ -161,7 +161,7 @@ const Header = () => {
                 <button className="btn btn-block">Ein Angebot erhalten</button>
               </form>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
